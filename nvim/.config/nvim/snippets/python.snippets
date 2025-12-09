@@ -1,0 +1,37 @@
+snippet #!
+	#!/usr/bin/env python3
+
+snippet class
+	class ${1:ClassName}():
+		""" docstring """
+
+		def __init__(self, ${0:arg}):
+			pass
+
+snippet def
+	def ${1:fname}(${2:`indent('.') ? 'self' : ''`}):
+		${0}
+
+snippet for
+	for ${1:item} in ${2:items}:
+		${0}
+
+snippet try 
+	try:
+		${1:${VISUAL}}
+	except ${2:Exception} as ${3:e}:
+		${0:raise $3}
+
+snippet main
+	if __name__ == '__main__':
+		${0:main()}
+
+snippet test
+	def test_${1:description}(${2:`indent('.') ? 'self' : ''`}):
+		${0}
+
+snippet testcase
+	class ${1:ExampleCase}(unittest.TestCase):
+
+		def test_${2:description}(self):
+			${0}
