@@ -1,0 +1,14 @@
+[Unit]
+Description=Sync home folders
+After=network-online.target
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+ExecStart=bash -c '/usr/bin/unison -batch -repeat watch -prefer newer'
+ExecStopPost=/bin/sh -c 'if [ "$$EXIT_STATUS" != 0 ]; then notify-send --icon=pacpl -t 5000 "Sync failed" "Sync server not working, retrying"; fi'
+Environment="DISPLAY=:0" "XAUTHORITY=/home/zzz1/.Xauthority" "PATH=/usr/local/bin:/usr/bin:/bin:/home/zzz1/.local/bin"
+
+[Install]
+WantedBy=default.target

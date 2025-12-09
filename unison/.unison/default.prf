@@ -1,0 +1,36 @@
+# Unison preferences file
+root = /home/zzz1
+root = ssh://unison@192.168.3.10//mnt/SSD0/unison
+
+path = Videos
+path = Documents
+path = Videos
+path = Pictures
+path = share
+path = dotfiles
+path = .aws
+path = .aws-sam
+path = work
+
+path = .local/share/remmina
+path = .password-store
+path = .gnupg
+path = sync
+
+path = .config/PrusaSlicer
+path = .config/Code
+
+ignore = Path work/repos/dspace/solrdata
+ignore = Path work/repos/oasis-utcluj-app-full-local/solrdata
+ignore = Name target
+ignore = Name venv
+ignore = Name .venv
+ignore = Name __pycache__
+ignore = Name node_modules
+ignore = Name .DS_Store
+# Cause root
+ignore = Path .thunderbird/*.default
+ignore = Path .thunderbird/Crash*Reports
+ignore = Path work/repos/llama.cpp
+ignore = Path work/repos/formforyou/data/store
+ignore = Path work/repos/clevair/db_data
