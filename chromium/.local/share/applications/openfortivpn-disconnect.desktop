@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=Connect OpenFortiVPN
-Exec=%h/.scripts/openfortivpn-manager.sh stop
+Name=Disconnect OpenFortiVPN
+Exec=$HOME/.scripts/openfortivpn_manage.sh stop
 Terminal=false
 Type=Application
 Icon=network-vpn

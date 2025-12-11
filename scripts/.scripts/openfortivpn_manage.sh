@@ -10,7 +10,7 @@ case "$1" in
         fi
         echo "Starting OpenFortiVPN..."
         # Run in background and save PID
-        sudo openfortivpn --saml-login vpn.sia.utcluj.ro &
+        nohup sudo openfortivpn --saml-login vpn.sia.utcluj.ro 2>&1 &
         echo $! > "$PIDFILE"
         /usr/bin/chromium --profile-directory="Default" https://vpn.sia.utcluj.ro:443/remote/saml/start?redirect=1
         ;;
