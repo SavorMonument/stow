@@ -1,0 +1,12 @@
+[Unit]
+Description=Watch laptop lid state and set monitors
+After=default.target
+
+[Service]
+Type=simple
+ExecStart=%h/.scripts/docker_watcher.sh
+Restart=always
+RestartSec=5s
+
+[Install]
+WantedBy=default.target
