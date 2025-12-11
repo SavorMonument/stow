@@ -17,7 +17,7 @@ Actions=new-window;new-private-window;
 
 [Desktop Action new-window]
 Name=New Window
-Exec=/usr/bin/chromium
+Exec=/usr/bin/chromium --profile-directory="Default"
 
 [Desktop Action new-private-window]
 Name=New Incognito Window

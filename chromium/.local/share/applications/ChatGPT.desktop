@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=ChatGPT
+Comment=ChatGPT
+Exec=/usr/bin/chromium --profile-directory="Default" https://chatgpt.com/
+Terminal=false
+Type=Application
+Icon=/home/zzz1/.local/share/applications/icons/ChatGPT.png
+StartupNotify=true

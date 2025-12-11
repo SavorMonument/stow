@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Connect OpenFortiVPN
+Exec=%h/.scripts/openfortivpn-manager.sh stop
+Terminal=false
+Type=Application
+Icon=network-vpn
+Categories=Network;VPN;
+
