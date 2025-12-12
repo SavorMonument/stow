@@ -14,8 +14,10 @@ PATH=$PATH:"/sbin/"
 
 alias ll="ls -la"
 alias vi="/sbin/nvim"
+alias xpl="xdg-open ."
 
 # run gparted
 xauth generate :1 . trusted
 
 . "$HOME/.local/share/../bin/env"
+
