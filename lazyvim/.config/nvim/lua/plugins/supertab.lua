@@ -4,6 +4,10 @@ return {
   opts = function(_, opts)
     local cmp = require("cmp")
 
+    opts.sources = vim.tbl_filter(function(source) 
+      return source.name ~= "copilot"
+    end, opts.sources)
+
     -- Disable preselect
     opts.preselect = cmp.PreselectMode.None
     opts.completion = { completeopt = "menu,menuone,noinsert,noselect" }
