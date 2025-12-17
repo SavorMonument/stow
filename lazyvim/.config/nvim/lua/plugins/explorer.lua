@@ -1,5 +1,19 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
+  keys = {
+    { "<leader>e", false },
+    {
+      "<leader>e",
+      function()
+        require("neo-tree.command").execute({
+          source = "filesystem",
+          toggle = true,
+          reveal = true,
+        })
+      end,
+      desc = "Toggle Neo-tree (reveal on open)",
+    },
+  },
   opts = {
     close_if_last_window = true,
     window = {
@@ -15,10 +29,12 @@ return {
         hide_ignored = false,
         hide_hidden = false,
       },
+      follow_current_file = {
+        enabled = false,
+      },
     },
   },
   dependencies = {
     "s1n7ax/nvim-window-picker",
   },
 }
-
