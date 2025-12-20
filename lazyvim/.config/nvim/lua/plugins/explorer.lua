@@ -19,7 +19,7 @@ return {
     window = {
       mappings = {
         ["<cr>"] = "open_with_window_picker",
-      }
+      },
     },
     filesystem = {
       filtered_items = {
