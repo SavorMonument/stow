@@ -13,4 +13,4 @@ vim.g.rust_recommended_style = 0
 
 vim.o.wrap = true
 vim.o.linebreak = true
-vim.b.autoformat = false
+vim.g.autoformat = false
