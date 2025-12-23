@@ -6,7 +6,7 @@ Name=Chromium Atracore
 GenericName=Web Browser
 # Gnome and KDE 3 uses Comment.
 Comment=Access the Internet
-Exec=/usr/bin/chromium --profile-directory="Profile 3" %U
+Exec=/usr/bin/chromium --profile-directory="Profile 3" --use-gl=desktop %U
 StartupNotify=true
 Terminal=false
 Icon=chromium
@@ -17,8 +17,8 @@ Actions=new-window;new-private-window;
 
 [Desktop Action new-window]
 Name=New Window
-Exec=/usr/bin/chromium --profile-directory="Profile 3"
+Exec=/usr/bin/chromium --profile-directory="Profile 3" --use-gl=desktop
 
 [Desktop Action new-private-window]
 Name=New Incognito Window
-Exec=/usr/bin/chromium --profile-directory="Profile 3" --incognito
+Exec=/usr/bin/chromium --profile-directory="Profile 3" --use-gl=desktop --incognito

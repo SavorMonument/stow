@@ -6,7 +6,7 @@ Name=Chromium Personal
 GenericName=Web Browser
 # Gnome and KDE 3 uses Comment.
 Comment=Access the Internet
-Exec=/usr/bin/chromium --profile-directory="Default" %U
+Exec=/usr/bin/chromium --profile-directory="Default" --use-gl=desktop %U
 StartupNotify=true
 Terminal=false
 Icon=chromium
@@ -17,8 +17,8 @@ Actions=new-window;new-private-window;
 
 [Desktop Action new-window]
 Name=New Window
-Exec=/usr/bin/chromium --profile-directory="Default"
+Exec=/usr/bin/chromium --profile-directory="Default" --use-gl=desktop
 
 [Desktop Action new-private-window]
 Name=New Incognito Window
-Exec=/usr/bin/chromium --profile-directory="Default" --incognito
+Exec=/usr/bin/chromium --profile-directory="Default" --use-gl=desktop --incognito
