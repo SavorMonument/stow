@@ -19,9 +19,10 @@ return {
 		window = {
 			mappings = {
 				["<cr>"] = "open_with_window_picker",
-				["<esc>"] = "",
+				["<esc>"] = "none",
 				["c"] = "copy_to_clipboard",
-				["z"] = "",
+				["z"] = "none",
+				["H"] = "none",
 			},
 		},
 		filesystem = {

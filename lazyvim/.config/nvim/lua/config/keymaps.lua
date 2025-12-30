@@ -3,7 +3,7 @@
 -- Add any additional keymaps here
 
 vim.keymap.set("n", "<leader>w", function()
-	require("conform").format({ async = true, lsp_fallback = false })
+  require("conform").format({ async = true, lsp_fallback = false })
 end, { desc = "Format with Conform.nvim", silent = true, noremap = true })
 vim.keymap.set("n", "\\\\", "gcc", { remap = true, desc = "Toggle comment for line" })
 vim.keymap.set("v", "\\\\", "gc", { remap = true, desc = "Toggle comment for line" })

@@ -4,7 +4,7 @@
 vim.opt.relativenumber = false
 
 vim.o.shiftwidth = 2 -- sets shiftwidth globally
-vim.o.tabstop = 2    -- sets tab width globally
+vim.o.tabstop = 2 -- sets tab width globally
 vim.o.expandtab = true
 
 -- Disable recommended style settings for specific languages
@@ -15,4 +15,5 @@ vim.o.wrap = true
 vim.o.linebreak = true
 vim.g.autoformat = false
 
+vim.g.snacks_animate = false
 vim.g.lazyvim_python_lsp = "basedpyright"
