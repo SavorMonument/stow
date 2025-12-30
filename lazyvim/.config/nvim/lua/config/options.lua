@@ -14,3 +14,5 @@ vim.g.rust_recommended_style = 0
 vim.o.wrap = true
 vim.o.linebreak = true
 vim.g.autoformat = false
+
+vim.g.lazyvim_python_lsp = "basedpyright"
