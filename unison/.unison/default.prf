@@ -35,4 +35,3 @@ ignore = Path .thunderbird/Crash*Reports
 ignore = Path work/repos/llama.cpp
 ignore = Path work/repos/formforyou/data/store
 ignore = Path work/repos/clevair/db_data
-ignore = Path work/repos/clevair/db_data
