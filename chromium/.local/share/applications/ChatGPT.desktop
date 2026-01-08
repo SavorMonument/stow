@@ -2,7 +2,7 @@
 Version=1.0
 Name=ChatGPT
 Comment=ChatGPT
-Exec=/usr/bin/chromium --profile-directory="Profile 3" https://chatgpt.com/
+Exec=/usr/bin/chromium https://chatgpt.com/ --profile-directory="Profile 3"
 Terminal=false
 Type=Application
 Icon=/home/zzz1/.local/share/applications/icons/ChatGPT.png

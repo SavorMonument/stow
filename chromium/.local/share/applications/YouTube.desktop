@@ -2,7 +2,7 @@
 Version=1.0
 Name=YouTube
 Comment=YouTube
-Exec=/usr/bin/chromium --profile-directory="Default" https://youtube.com/
+Exec=/usr/bin/chromium https://youtube.com/ --profile-directory="Default"
 Terminal=false
 Type=Application
 Icon=/home/zzz1/.local/share/applications/icons/YouTube.png
