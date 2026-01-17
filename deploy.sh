@@ -8,5 +8,6 @@ stow lazyvim
 # stow nvim
 stow scripts
 stow unison
+stow tmux
 
 
