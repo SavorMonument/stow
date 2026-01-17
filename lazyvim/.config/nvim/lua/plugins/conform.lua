@@ -3,6 +3,7 @@ return {
 	opts = {
 		formatters_by_ft = {
 			python = { "autopep8" },
+			html = { "html_beautify" },
 		},
 		formatters = {
 			autopep8 = {
@@ -15,6 +16,11 @@ return {
 				env = {
 					PHP_CS_FIXER_IGNORE_ENV = "1",
 				},
+			},
+			html_beautify = {
+				exe = "html-beautify",
+				args = { "--indent-size", "2", "--wrap-line-length", "120" },
+				stdin = true,
 			},
 		},
 	},

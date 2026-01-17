@@ -9,6 +9,7 @@ vim.o.expandtab = true
 
 -- Disable recommended style settings for specific languages
 vim.g.python_recommended_style = 0
+vim.g.php_recommended_style = 0
 vim.g.rust_recommended_style = 0
 
 vim.o.wrap = true
