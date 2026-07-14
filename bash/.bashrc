@@ -3,7 +3,9 @@
 
 # All the default Omarchy aliases and functions
 # (don't mess with these directly, just overwrite them here!)
-source ~/.local/share/omarchy/default/bash/rc
+if [[ -d "~/.local/share/omarchy" ]]; then
+  source ~/.local/share/omarchy/default/bash/rc
+fi
 
 # Add your own exports, aliases, and functions here.
 #
@@ -15,9 +17,3 @@ PATH=$PATH:"/sbin/"
 alias ll="ls -la"
 alias vi="/sbin/nvim"
 alias xpl="xdg-open ."
-
-# run gparted
-xauth generate :1 . trusted
-
-. "$HOME/.local/share/../bin/env"
-
