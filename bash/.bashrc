@@ -1,10 +1,11 @@
 # If not running interactively, don't do anything (leave this at the top of this file)
 [[ $- != *i* ]] && return
 
-# Add your own exports, aliases, and functions here.
-#
-# Make an alias for invoking commands you use constantly
-# alias p='python'
+# All the default Omarchy aliases and functions
+# (don't mess with these directly, just overwrite them here!)
+# if [[ -d "~/.local/share/omarchy" ]]; then
+# source ~/.local/share/omarchy/default/bash/rc
+# fi
 
 PATH=$PATH:"/sbin/"
 

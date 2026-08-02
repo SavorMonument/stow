@@ -1,6 +1,6 @@
 # Unison preferences file
 root = /home/zzz1
-root = ssh://unison@192.168.3.10//mnt/SSD0/unison
+root = ssh://unison@192.168.3.10//mnt/SSD0/unison/l1
 
 path = Videos
 path = Documents
